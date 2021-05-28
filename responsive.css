@@ -1,0 +1,182 @@
+@media screen and (min-width: 924px){
+    .media-buttons{
+        display: flex;
+    }
+}
+@media screen and (max-width: 924px){
+    .profile .profile-desc{
+        width: 100%;
+    }
+    .profile .top-weather-icon{
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .profile .bottom-weather-icon{
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    /* Contact Section Start Here */
+    .media-buttons{
+        display: flex;
+    }
+    /* Contact Section End Here */
+}
+@media screen and (max-width: 895px){
+    .navbar-title{
+        width: 100%;
+        text-align: center;
+    }
+    .navbar-title h1{
+        width: 100%;
+        text-align: center;
+    }
+    .navbar-menu{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* About section start here */
+    .about-me{
+        width: 100%;
+        height: auto;
+    }
+    .about-me-image{
+        width: 100%;
+        height: 100%;
+        padding: 50px 0 0 0;
+    }
+    .about-me-image img{
+        width: 200px;
+        height: 200px;
+    }
+    .about-me-content{
+        width: 100%;
+        height: 100%;
+        padding: 30px 0 0 0;
+    }
+    /* About section end here */
+    /* Professional Experience Start Here */
+    .column{
+        width: 100%;
+        height: auto;
+    }
+    .work-experience{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    /* Professional Experience End Here */
+
+    /* Contact Section Start Here */
+    .contact-section-form{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    .media-link{
+        width: 100%;
+        height: auto;
+    }
+    .media-link .media-buttons{
+        display: flex;
+        margin-top: 80px;
+    }
+    /* Contact Sectoin End Here */
+}
+@media screen and (max-width: 750px){
+    .footer{
+        padding: 5px;
+    }
+    .footer-menu{
+        width: 100%;
+        padding: 5px 0;
+        text-align: center;
+    }
+    .footer-desc{
+        width: 100%;
+        padding: 5px 0;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 451px){
+    .navbar-title h1{
+        width: 100%;
+        text-align: center;
+        color: #ccc;
+        letter-spacing: 3px;
+        text-decoration: underline;
+    }
+    .navbar-menu ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar-menu ul li a{
+        width: 100%;
+        margin: 5px;
+        padding: 10px 15px;
+    }
+    .profile{
+        background: #34495e;
+    }
+    .profile-desc h1{
+        color: #bdc3c7;
+    }
+    .profile-desc p{
+        color: #bdc3c7;
+    }
+    /* About me section start here */
+    .about-me-hr{
+        border: 2px solid #808080;
+    }
+    .about-me{
+        width: 100%;
+        height: auto;
+    }
+    .about-me-image{
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 20px 0 0 0;
+    }
+    .about-me-image img{
+        width: 150px;
+        height: 150px;
+        border: 2px solid #fff;
+    }
+    .about-me-content{
+        width: 100%;
+    }
+    .about-me address > p{
+        padding: 8px 0;
+    }
+    .about-me .cv-button{
+        background-color: #ced6e0;
+        text-align: center;
+    }
+    /* About me section end here */
+
+    /* Footer Section Start Here */
+    .footer{
+        width: 100%;
+        padding: 5px;
+    }
+    .footer-menu{
+        width: 100%;
+        padding: 5px;
+        text-align: center;
+    }
+    .footer-desc{
+        width: 100%;
+        padding: 5px;
+        text-align: center;
+    }
+    /* Footer Section End Here */
+}

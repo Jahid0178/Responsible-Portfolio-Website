@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Grid Layout</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&family=Satisfy&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <!--Nav section start here-->
+    <div class="navbar">
+        <div class="navbar-title">
+            <h1>Jahidul Haque</h1>
+        </div>
+        <div class="navbar-menu">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#about">about me</a></li>
+                <li><a href="#">blogs</a></li>
+                <li><a href="#skill">skill</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--Nav section end here-->
+
+    <!--Profile section start here-->
+    <div class="profile">
+        <img class="top-weather-icon" src="assests/weather.png" alt="weather">
+        <div class="profile-desc">
+            <h1>I'm a student <br> & <br> Web Developer</h1>
+            <p>My name is Zahid. I am a student. I study at Savar Government College. I am an Inter 1st year student. I am studying as well as learning the work of a web developer. I am learning HTML and CSS, JavaScript and other programming languages. I wish I was trying to be a full stack web developer.</p>
+        </div>
+        <img class="bottom-weather-icon" src="assests/weather.png" alt="weather">
+    </div> 
+    <!--Profile section end here-->
+
+    <!--About me start section-->
+    <div class="about-me" id="about">
+        <h2>About Me</h2>
+        <div class="about-me-image column">
+            <img src="assests/Jahid.jpg" alt="Jahidul Haque">
+        </div>
+        <div class="about-me-content column">
+            <p>I am an arts student. I was in science before. Now I am studying arts. I wish I could study computer science. And I have a lot of interest in studying computers.</p>
+            <p>I want to be a full-stack web developer. I like exploring the different functions of web development. And I like to do different kinds of work with the web.</p>
+            <hr class="hr-dotted">
+            <address>
+                <p>Name: A,K,M Jahidul Haque (Jony)</p>
+                <hr class="hr-dotted">
+                <p>Address: Dagarmura, Savar, Dhaka.</p>
+                <hr class="hr-dotted">
+                <p>Email: <a href="mailto:Jahidulhaque767@gmail.com">Jahidulhaque767@gmail.com</a></p>
+                <hr class="hr-dotted">
+                <p>Phone: <a href="+8801789293803">+8801789293803</a></p>
+            </address>
+            <p class="cv-btn">
+                <a href="#">
+                    <button class="cv-button">Download My CV</button>
+                </a>
+            </p>
+        </div>
+    </div>
+    <!--About me end section-->
+
+    <!-- Professional experience start section here -->
+    <div class="professional-experience" id="skill">
+        <div class="work-experience column">
+            <div class="card">
+                <div class="card-icon">
+                    <img src="assests/work.png" alt="work icon">
+                </div>
+                <div class="card-title">
+                    <h2>Work Experience</h2>
+                </div>
+                <div class="card-desc">
+                    <ol>
+                        <li>
+                            <strong>Freelancer at Freelancer.com</strong>
+                            <p>Web Developer</p>
+                            <p>01/01/2020 - Running</p>
+                        </li>
+                        <hr>
+                        <li>
+                            <strong>Freelancer at Fiverr.com</strong>
+                            <p>Web Developer</p>
+                            <p>01/01/2020 - Running</p>
+                        </li>
+                        <hr>
+                        <li>
+                            <strong>Freelancer at Upwork.com</strong>
+                            <p>Web Developer</p>
+                            <p>10/01/2020 - Running</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="work-experience column">
+            <div class="card">
+                <div class="card-icon">
+                    <img src="assests/education.png" alt="Education Icon">
+                </div>
+                <div class="card-title">
+                    <h2>Education</h2>
+                </div>
+                <div class="card-desc">
+                    <ol>
+                        <li>
+                            <strong>SSC</strong>
+                            <p>Chandina Pilot Model High School</p>
+                        </li>
+                        <hr>
+                        <li>
+                            <strong>HSC</strong>
+                            <p>Jahangirnagar University School & College</p>
+                        </li>
+                        <hr>
+                        <li>
+                            <strong>Honours</strong>
+                            <p>Savar Government University & College</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Professional experience end section here -->
+
+    <!-- Contact Section Starts Here -->
+    <div class="contact-section" id="contact">
+        <div class="contact-section-form column-3">
+            <form action="mailto:jahidulhaque767@gmail.com" method="post" enctype="text/plain">
+                <input type="text" name="Name" placeholder="Enter your name" required>
+                <input type="email" name="Email" placeholder="Enter your email" required>
+                <textarea name="message" cols="30" rows="10" placeholder="Enter your message here"></textarea>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </div>
+        <div class="media-link column-3">
+            <h2>More Way To Contact</h2>
+            <hr class="hr-dotted">
+            <div class="media-buttons">
+                <button class="btn" onclick="window.open('https://www.facebook.com/jahidul.haque.01789/')" class="request-callback"><i class="fa fa-facebook" aria-hidden="true" style="color: #3b5998;"></i></button>
+                <button class="btn" onclick="window.open('https://www.youtube.com/channel/UCCKr8ESZcbvC4Q4S5cex8kA')" class="request-callback"><i class="fa fa-youtube-play" aria-hidden="true" style="color: red;"></i></button>
+                <button class="btn" onclick="window.open('https://github.com/Jahid0178')" class="request-callback"><i class="fa fa-github" aria-hidden="true" style="color: #4078c0;"></i></button>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Section Ends Here -->
+
+    <!-- Footer Section Start Here -->
+    <div class="footer">
+        <div class="footer-menu">
+            <a href="#">home</a>
+            <a href="#">about me</a>
+            <a href="#">blogs</a>
+            <a href="#">skill</a>
+            <a href="#">contact</a>
+        </div>
+        <div class="footer-desc">
+            &copy; Developed By Jahidul Haque 2021.
+        </div>
+    </div>
+    <!-- Footer Section End Here -->
+</body>
+</html>

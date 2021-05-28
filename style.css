@@ -1,0 +1,341 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Fira Sans', sans-serif;
+}
+/* Start Reuseable Components */
+.column{
+    width: 50%;
+    float: left;
+    height: 600px;
+    padding: 10px;
+}
+.column-3{
+    width: 33.33%;
+    float: left;
+    padding: 10px;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+.hr-dotted{
+    width: 80px;
+    margin: 0 auto;
+    border: 5px dotted #fff;
+    border-bottom: none;
+}
+/* End Reuseable Components */
+.navbar{
+    background: #8e44ad;
+}
+.navbar-title{
+    width: 50%;
+    float: left;
+    padding: 0 10px;
+}
+.navbar-title h1{
+    width: 180px;
+    color: #fff;
+    font-family: 'Satisfy', cursive;
+    cursor: pointer;
+}
+.navbar-title h1:hover{
+    color: #8395a7;
+}
+.navbar-menu{
+    width: 50%;
+    float: left;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.navbar-menu ul{
+    list-style-type: none;
+    float: right;
+    padding: 5px;
+}
+.navbar-menu ul li{
+    display: inline-flex;
+}
+.navbar-menu ul li a{
+    color: #fff;
+    display: inline-flex;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.navbar-menu ul li a:hover{
+    background: #34495e;
+    border-radius: 5px;
+}
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/* Profile Section Start Here */
+.profile{
+    padding: 150px 10px;
+    text-align: center;
+    position: relative;
+    background: #bdc3c7;
+}
+.profile .profile-desc{
+    width: 850px;
+    height: auto;
+    margin: 0 auto;
+    color: #34495e;
+}
+.profile .profile-desc h1{
+    padding: 10px 0;
+}
+.profile .profile-desc p{
+    padding: 10px 0;
+    text-align: justify;
+}
+.profile .top-weather-icon{
+    width: 120px;
+    height: auto;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    transition: 1s ease-in-out;
+}
+.profile .top-weather-icon:hover{
+    transform: rotate(360deg);
+}
+.profile .bottom-weather-icon{
+    width: 120px;
+    height: auto;
+    position: absolute;
+    left: 50px;
+    bottom: 0;
+    transition: 1s ease-in-out;
+}
+.profile .bottom-weather-icon:hover{
+    transform: rotate(360deg);
+}
+/* Profile Section End Here */
+
+/* About me start here */
+.about-me{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+    background: #1e272e;
+}
+.about-me-content-hr{
+    padding: 0;
+}
+.about-me h2{
+    font-size: 1.5rem;
+    padding: 1% 7%;
+    color: #333;
+    background: #ccc;
+}
+.about-me-image{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-me-image img{
+    width: 250px;
+    height: 250px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+.about-me-image img:hover{
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.8);
+}
+.about-me-content{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about-me-content p{
+    padding: 10px 20px;
+    line-height: 1.5rem;
+}
+.about-me address{
+    width: 100%;
+}
+.about-me::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.about-me .cv-button{
+    padding: 5% 40%;
+    border: none;
+    border-radius: 5px;
+    background: #a4b0be;
+    color: #2f3542;
+    font-weight: 700;
+    cursor: pointer;
+}
+/* About me end here */
+
+/* Professional Experience Start Here */
+.professional-experience{
+    padding: 1% 0;
+    background: #95a5a6;
+}
+.work-experience{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.professional-experience .card{
+    width: 350px;
+    height: 450px;
+    padding: 10px 30px;
+    background: #bdc3c7;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.card-icon{
+    padding: 10px 0;
+    text-align: center;
+}
+.card-icon img{
+    width: 60px;
+    height: 60px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    padding: 5px;
+}
+.card-title h2{
+    padding: 10px;
+    text-align: center;
+}
+.card-desc{
+    margin-top: 15px;
+}
+.card-desc strong{
+    color: #353b48;
+    padding: 5px;
+    display: inline-block;
+}
+.card-desc p{
+    padding: 5px;
+}
+.card:hover{
+    box-shadow: 0 2px 5px 2px #D5D5D5;
+}
+.professional-experience::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Professional Experience End Here */
+
+/* Contact Section Start Here */
+.contact-section{
+    width: 100%;
+    height: 100vh;
+    background-color: #39a4ac;
+}
+.contact-section-form{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.contact-section-form input,
+.contact-section-form textarea{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+    font-size: 0.9rem;
+}
+.contact-section-form button{
+    color: #fff;
+    border: none;
+    padding: 10px;
+    background-color: #222f3e;
+    margin: 10px 0 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.media-link{
+    text-align: center;
+    position: relative;
+}
+.media-link h2{
+    text-align: center;
+    color: #fff;
+    padding: 0 0 10px 0;
+}
+.media-buttons{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 250px;
+}
+.media-buttons .btn{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    font-size: 32px;
+    text-align: center;
+    margin: 20px 10px; 
+    cursor: pointer;
+    transition: 0.5s;
+}
+.media-buttons .btn:hover{
+    transform: translateY(-10px);
+}
+/* Contact Section End Here */
+
+/* Footer Section Start Here */
+.footer{
+    width: 100%;
+    padding: 15px;
+    background: #000;
+}
+.footer-menu{
+    width: 50%;
+    display: inline-block;
+}
+.footer-menu a{
+    padding: 0 10px;
+    text-transform: capitalize;
+}
+.footer-menu a:hover{
+    color: #808080;
+}
+.footer-desc{
+    width: 50%;
+    float: right;
+    color: #fff;
+    text-align: right;
+}
+.footer::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* Footer Section End Here */
